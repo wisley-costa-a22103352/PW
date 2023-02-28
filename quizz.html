@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Wisley Costa">
+    <meta name="description" content="Website sobre Luanda">
+    <meta name="keywords" content="palavras chave">
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Luanda</h1>
+        <title> Conheça Luanda</title>
+        <figure>
+            <img src="imagens\Luanda.png" alt="Luanda">
+            <details>
+                <figcaption>Uma cidade luminosa e vibrosa de energia cultural</figcaption>
+            </details>
+        </figure>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Introdução</b></a>
+        <a href="local.html">Local</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="html5-css.html">HTML5</a>
+    </nav>
+
+    <main>
+        <h3>Quizz</h3>
+
+        <p>Será que você conhece a cidade de Luanda? Teste os seus conhecimentos com este Quizz!!!</p>
+
+        <form>
+            <fieldset>Quizz sobre Luanda</fieldset>
+        </form>
+
+        <fieldset>
+            <legend>info</legend>
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>perguntas</legend>
+            <fieldset>
+                <p>1. Qual é o nome da cidade?</p>
+                <label for="cidade">Digite o nome da cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <p>2. Qual é a atração mais famosa da cidade?</p>
+                <input type="radio" id="atração1" name="atração" value="atração1">
+                <label for="atração1">A</label><br>
+                <input type="radio" id="atração2" name="atração" value="atração2">
+                <label for="atração2">B</label><br>
+                <input type="radio" id="atração3" name="atração" value="atração3">
+                <label for="atração3">C</label><br>
+
+                <p>3. Quais dessas opções de transporte público existem na cidade?</p>
+                <input type="checkbox" id="metro" name="transporte" value="errado">
+                <label for="metro">Metro</label><br>
+                <input type="checkbox" id="Autocarros" name="transporte" value="onibus">
+                <label for="onibus">Autocarros</label><br>
+                <input type="checkbox" id="Comboios" name="transporte" value="trem">
+                <label for="trem">Comboios</label><br>
+
+                <p>4. Quando é que foi descorto a cidade de Luanda?</p>
+                <input type="date" id="data1" name="Data" value="data1">
+                <label for="data1"></label><br>
+
+                <p>5. Qual das comidas regionais pertence a cidade de Luanda?</p>
+                <p>
+                    <input type="image" src="imagens\mufete.jpg" alt="Mufete" id="comida" name="mufete" value="certo">
+                    <input type="image" src="imagens\feijoada.png" alt="Feijoada" id="comida" name="feijoada"
+                        value="errado">
+                    <input type="image" src="imagens\jollofrice.jpg" alt="jollofrice" id="comida" name="jollofrice"
+                        value="errado">
+                    <input type="image" src="imagens\carneseca.jpg" alt="carneseca" id="comida" name="carneseca"
+                        value="errado">
+                </p>
+                <input type="radio" name="resposta5" value="a"> Feijoada
+                <input type="radio" name="resposta5" value="b"> Mufete
+                <input type="radio" name="resposta5" value="c"> Jollof Rice
+                <input type="radio" name="resposta5" value="d"> Nenhuma das anteriores
+
+                <p>6. Qual é a cor principal na bandeira de Luanda-Angola?</p>
+                <input type="color" value="#0000FF">
+
+                <p>7. Qual é a população estimada de Luanda em 2022?</p>
+                <input type="number" min="0" max="10000000" step="1000"><br>
+
+                <p>8. Qual é a extensão da orla marítima de Luanda, em quilômetros?</p>
+                <input type="range" min="0" max="50" step="1">
+
+                <p>9. Qual é o ponto turístico mais famoso de Luanda?</p>
+                <label for="pergunta9">Resposta:</label>
+                <select id="pergunta9" name="pergunta9">
+                    <option value="a">Ilha do Mussulo</option>
+                    <option value="b">Fortaleza de São Miguel</option>
+                    <option value="c">Palácio de Ferro</option>
+                </select>
+
+                <p>10. Qual é a praia mais popular em Luanda?</p>
+                <label for="pergunta10">Resposta:</label>
+                <input list="praias" id="pergunta10" name="pergunta10">
+                <datalist id="praias">
+                    <option value="Praia da Ilha do Cabo">
+                    <option value="Praia do Bispo">
+                    <option value="Praia da Corimba">
+                </datalist>
+
+                <p>11. Qual é o principal rio que atravessa Luanda?</p>
+                <label for="pergunta11">Resposta:</label>
+                <input type="text" id="pergunta11" name="pergunta11">
+                <br>
+                <p>Insira um comentário</p>
+                <textarea name="comentário" id="comente" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Enviar">
+                <form method="post" action="mailto:wisley.costa99@hotmail.com" enctype="multipart/form-data"></form>
+
+
+            </fieldset>
+        </fieldset>
+
+    </main>
+
+    <br>
+
+    <footer>Nome: Wisley Costa, Nº aluno: 22103352, Universidade: Universidade Lusófona de Humanidades e Tecnologias,
+        Ano: 2º ano</footer>
+
+</body>
+
+</html>
